@@ -1,0 +1,17 @@
+import {
+  JupyterFrontEnd,
+  JupyterFrontEndPlugin
+} from '@jupyterlab/application';
+
+/**
+ * Initialization data for the jupyter-upload extension.
+ */
+const extension: JupyterFrontEndPlugin<void> = {
+  id: 'jupyter-upload',
+  autoStart: true,
+  activate: (app: JupyterFrontEnd) => {
+    console.log('JupyterLab extension jupyter-upload is activated!');
+  }
+};
+
+export default extension;
